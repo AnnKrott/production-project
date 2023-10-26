@@ -1,21 +1,21 @@
-import { classNames } from "shared/lib/classNames/classNames";
+import { classNames } from 'shared/lib/classNames/classNames'
 import classes from './Sidebar.module.scss'
-import { useState } from "react";
-import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
-import { LangSwitcher } from "shared/ui/LangSwitcher/LangSwitcher";
+import { useState } from 'react'
+import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher'
+import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher'
 
 interface SidebarProps {
-    className?: string;
+  className?: string
 }
 
 export const Sidebar = ({ className }: SidebarProps) => {
-    const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(false)
 
-    const toggleSidebarWidth = () => {
-        setCollapsed(prev => !prev)
-    }
+  const toggleSidebarWidth = () => {
+    setCollapsed(prev => !prev)
+  }
 
-    return (
+  return (
         <div className={classNames(classes.Sidebar, { [classes.collapsed]: collapsed }, [className])}>
 
             <button onClick={toggleSidebarWidth}>Collapse sidebar</button>
@@ -26,7 +26,5 @@ export const Sidebar = ({ className }: SidebarProps) => {
             </div>
 
         </div>
-    )
-};
-
-
+  )
+}
