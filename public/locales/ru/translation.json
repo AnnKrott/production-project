@@ -1,5 +1,9 @@
 {
   "main page": "Главная страница",
   "Русский": "English",
-  "glorious": "славный"
+  "glorious": "славный",
+  "page-not-found": "Страница не найдена",
+  "something-went-wrong": "Что-то пошло не так",
+  "try-again": "Попробуйте еще раз",
+  "throwerror": "БросокError"
 }

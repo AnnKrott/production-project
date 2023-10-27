@@ -1,5 +1,9 @@
 {
-    "main page": "Main page",
-    "Русский": "Русский",
-    "glorious": "glorious"
+  "main page": "Main page",
+  "Русский": "Русский",
+  "glorious": "glorious",
+  "page-not-found": "Page not found",
+  "something-went-wrong": "Something went wrong",
+  "try-again": "Try again",
+  "throwerror": "ThrowError"
 }

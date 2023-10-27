@@ -1,5 +1,9 @@
 {
   "about": "about",
   "main page": "main page",
+  "page-not-found": "page-not-found",
+  "something-went-wrong": "something-went-wrong",
+  "throwerror": "throwerror",
+  "try-again": "try-again",
   "Русский": "Русский"
 }
