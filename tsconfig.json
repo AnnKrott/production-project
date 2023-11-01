@@ -7,6 +7,7 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
+    "strictNullChecks": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
@@ -23,7 +24,8 @@
     }
   },
   "include": [
+      "./config/jest/setupTests.ts",
       ".",
-      "./config/jest/setupTests.ts"
+      "config/storybook"   
     ]
 }
