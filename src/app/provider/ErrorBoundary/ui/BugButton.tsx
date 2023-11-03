@@ -21,7 +21,7 @@ export const BugButton = () => {
         style={{ backgroundColor: 'teal', marginLeft: 15 }}
         onClick={throwError}
         >
-            {t('throwerror')}
+            {t('throw error')}
         </Button>
   )
 }

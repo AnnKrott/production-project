@@ -1,9 +1,8 @@
 {
-  "main page": "Главная страница",
+  "Main page": "Главная страница",
   "Русский": "English",
-  "glorious": "славный",
-  "page-not-found": "Страница не найдена",
-  "something-went-wrong": "Что-то пошло не так",
-  "try-again": "Попробуйте еще раз",
-  "throwerror": "БросокError"
+  "Page not found": "Страница не найдена",
+  "Something went wrong": "Что-то пошло не так",
+  "Try again": "Попробуйте еще раз",
+  "Throw error": "Выбросить ошибку"
 }
