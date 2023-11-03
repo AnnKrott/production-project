@@ -17,7 +17,6 @@ export function buildPlugins ({ paths, isDev }: BuildOptions) {
     new DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev)
     })
-
   ]
 
   if (isDev) {
