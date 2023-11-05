@@ -1,8 +1,12 @@
 {
-  "Main page": "Главная страница",
   "Русский": "English",
-  "Page not found": "Страница не найдена",
+  "RU": "EN",
+
   "Something went wrong": "Что-то пошло не так",
   "Try again": "Попробуйте еще раз",
-  "Throw error": "Выбросить ошибку"
+  "Throw error": "Выбросить ошибку",
+  
+  "Main Page": "Главная страница",
+  "About page": "О сайте",
+  "Page not found": "Страница не найдена"
 }

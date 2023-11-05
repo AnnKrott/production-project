@@ -17,13 +17,13 @@ export const PageError = ({ className }: PageErrorProps) => {
   return (
         <div className={classNames(classes.PageError, {}, [className])}>
             <p>
-                {t('something-went-wrong')}
+                {t('Something went wrong')}
             </p>
             <Button
             onClick={reloadPage}
             style={{ backgroundColor: 'teal' }}
             >
-                {t('try-again')}
+                {t('Try again')}
             </Button>
         </div>
   )

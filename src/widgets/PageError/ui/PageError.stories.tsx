@@ -1,5 +1,5 @@
 import { type Meta, type StoryObj } from '@storybook/react'
-import { DarkTheme } from 'shared/config/decorators/ThemeDecorator'
+import { DarkTheme } from 'shared/config/storybook/ThemeDecorator'
 import { PageError } from './PageError'
 
 const meta = {

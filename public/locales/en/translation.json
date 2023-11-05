@@ -1,8 +1,12 @@
 {
-  "Main page": "Main page",
   "Русский": "Русский",
-  "Page not found": "Page not found",
+  "RU": "RU",
+
   "Something went wrong": "Something went wrong",
   "Try again": "Try again",
-  "throw error": "Throw Error"
+  "Throw error": "Throw Error",
+  
+  "Main Page": "Main Page",
+  "About page": "About Page",
+  "Page not found": "Page not found"
 }

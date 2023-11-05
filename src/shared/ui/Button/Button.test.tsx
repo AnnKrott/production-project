@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import { Button, ThemeButton } from './Button'
+import { Button, ButtonTheme } from './Button'
 import React from 'react'
 
 describe('button', () => {
@@ -11,7 +11,7 @@ describe('button', () => {
 
   test('test button with base theme', () => {
     // eslint-disable-next-line i18next/no-literal-string
-    render(<Button theme={ThemeButton.BASE}>TEST</Button>)
+    render(<Button theme={ButtonTheme.BASE}>TEST</Button>)
     expect(screen.getByText('TEST')).toHaveClass('base')
     screen.debug()
   })

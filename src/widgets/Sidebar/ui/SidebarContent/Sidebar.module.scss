@@ -1,13 +1,9 @@
 .Sidebar {
+    position: relative;
     height: calc(100vh - var(--navbar-height));
     width: var(--sidebar-width);
     background-color: var(--inverted-bgc);
-    position: relative;
     transition: width 0.3s;
-}
-
-.collapsed {
-    width: var(--sidebar-width-collapsed);
 }
 
 .switchers {
@@ -17,4 +13,48 @@
     justify-content: center;
     gap: 20px;
     width: 100%;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.link {
+    opacity: 1;
+    line-height: 1;
+}
+
+.icon {
+    fill: var(--inverted-primary-color);
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+
+    .switchers {
+        flex-direction: column;
+    }
+
+    .link {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.collapseBtn {
+    position: absolute;
+    right: -32px;
+    bottom: 32px;
 }
