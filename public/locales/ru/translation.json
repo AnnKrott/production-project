@@ -1,12 +1,11 @@
 {
   "Русский": "English",
   "RU": "EN",
-
   "Something went wrong": "Что-то пошло не так",
   "Try again": "Попробуйте еще раз",
   "Throw error": "Выбросить ошибку",
-  
   "Main Page": "Главная страница",
   "About page": "О сайте",
-  "Page not found": "Страница не найдена"
+  "Page not found": "Страница не найдена",
+  "Login": "Авторизоваться"
 }

@@ -1,11 +1,15 @@
 import { type Meta, type StoryObj } from '@storybook/react'
 import { DarkTheme } from 'shared/config/storybook/ThemeDecorator'
-import { ThemeSwitcher } from './ThemeSwitcher'
+import { Modal } from './Modal'
 
 const meta = {
-  title: 'Shared/ThemeSwitcher',
-  component: ThemeSwitcher
-} satisfies Meta<typeof ThemeSwitcher>
+  title: 'Shared/Modal',
+  component: Modal,
+  args: {
+    children: 'Lorem ipsum dolar',
+    isOpen: true
+  }
+} satisfies Meta<typeof Modal>
 
 export default meta
 type Story = StoryObj<typeof meta>
