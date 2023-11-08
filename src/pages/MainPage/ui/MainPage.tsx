@@ -7,7 +7,7 @@ const MainPage = () => {
   return (
         <div>
             {t('Main Page')}
-            <BugButton/>
+            <BugButton />
         </div>
   )
 }

@@ -8,14 +8,17 @@ import App from './app/App'
 
 import 'shared/config/i18n/i18n'
 import 'app/styles/index.scss'
+import { StoreProvider } from 'app/provider/StoreProvider'
 
 render(
-    <BrowserRouter>
-        <ErrorBoundary>
+    <StoreProvider>
+        <BrowserRouter>
+            <ErrorBoundary>
                 <ThemeProvider>
                     <App />
                 </ThemeProvider>
-        </ErrorBoundary>
-    </BrowserRouter>,
+            </ErrorBoundary>
+        </BrowserRouter>
+    </StoreProvider>,
     document.getElementById('root')
 )
