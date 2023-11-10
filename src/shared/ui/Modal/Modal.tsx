@@ -9,12 +9,14 @@ interface ModalProps {
   children?: ReactNode
   isOpen?: boolean
   onClose?: () => void
+  lazy?: boolean
 }
 
 const ANIMATION_DELAY = 200
 
-export const Modal = ({ className, children, isOpen, onClose }: ModalProps) => {
+export const Modal = ({ className, children, isOpen, onClose, lazy }: ModalProps) => {
   const [isClosing, setIsClosing] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
   const timeRef = useRef<ReturnType<typeof setTimeout>>()
 
   const { theme } = useTheme()
@@ -55,9 +57,19 @@ export const Modal = ({ className, children, isOpen, onClose }: ModalProps) => {
     }
   }, [isOpen, onKeyDown])
 
+  useEffect(() => {
+    if (isOpen) {
+      setIsMounted(true)
+    }
+  }, [isOpen])
+
+  if (lazy && !isMounted) {
+    return null
+  }
+
   return (
       <Portal>
-        <div className={classNames(classes.Modal, mods, [className])}>
+        <div className={classNames(classes.Modal, mods, [className, theme, 'app__modal'])}>
             <div className={classes.overlay} onClick={closeHandler}>
                 <div className={classes.content} onClick={onContentClick}>
                     {children}
