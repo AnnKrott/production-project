@@ -1,6 +1,7 @@
 .Button {
     padding: 6px 15px;
     cursor: pointer;
+    font: inherit;
     color: inherit;
 }
 
@@ -27,7 +28,7 @@
 
 .background-inverted {
     background: var(--inverted-bgc);
-    color: var(--bg-color);
+    color: var(--inverted-primary-color);
     border: none;
 }
 
@@ -60,4 +61,8 @@
 
 .size-xl {
     font: var(--font-xl);
+}
+
+.disabled {
+    opacity: 0.5;
 }
