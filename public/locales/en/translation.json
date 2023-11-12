@@ -12,5 +12,9 @@
   "lorem-ipsum-dolor": "Lorem ipsum dolor",
   "Increment": "Increment",
   "Decrement": "Decrement",
-  "Password": "Password"
+  "Password": "Password",
+  "Authentication": "Authentication",
+  "Incorrect login or password": "Incorrect Login or Password",
+  "Username": "Username",
+  "Sign out": "Sign out"
 }

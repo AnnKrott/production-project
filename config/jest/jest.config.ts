@@ -39,7 +39,8 @@ export default {
   moduleNameMapper: {
     'src(.*)$': '<rootDir>/src$1',
     '\\.s?css$': 'identity-obj-proxy',
-    '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx')
+    '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
+    axios: 'axios/dist/node/axios.cjs'
   }
 
   // All imported modules in your tests should be mocked automatically

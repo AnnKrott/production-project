@@ -7,8 +7,12 @@
   "Main Page": "Главная страница",
   "About page": "О сайте",
   "Page not found": "Страница не найдена",
-  "Login": "Авторизоваться",
-  "Increment": "Приращение",
+  "Login": "Войти",
+  "Increment": "Инкремент",
   "Decrement": "Декремент",
-  "Password": "Пароль"
+  "Password": "Пароль",
+  "Authentication": "Форма авторизации",
+  "Incorrect login or password": "Неверный логин или пароль",
+  "Username": "Логин",
+  "Sign out": "Выйти"
 }
