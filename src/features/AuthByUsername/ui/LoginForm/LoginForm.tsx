@@ -7,19 +7,30 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import { Button, ButtonTheme } from 'shared/ui/Button/Button'
 import { Input } from 'shared/ui/Input/Input'
 
-import { loginActions } from '../../model/slice/LoginSlice'
-import { getLoginState } from '../../model/selectors/getLoginState/getLoginstate'
+import { loginActions, loginReducer } from '../../model/slice/LoginSlice'
 import { LoginByUsername } from '../../model/services/LoginByUsername/LoginByUsername'
 import { Text, TextTheme } from 'shared/ui/Text/Text'
+import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername'
+import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword'
+import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading'
+import { getLoginError } from '../../model/selectors/getLoginError/getLoginError'
+import { DynamicModuleLoader, type reducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader'
 
-interface LoginFormProps {
+export interface LoginFormProps {
   className?: string
 }
 
-export const LoginForm = memo(({ className }: LoginFormProps) => {
+const initialReducers: reducersList = {
+  login: loginReducer
+}
+
+const LoginForm = memo(({ className }: LoginFormProps) => {
   const { t } = useTranslation()
   const dispatch = useDispatch()
-  const { username, password, isLoading, error } = useSelector(getLoginState)
+  const username = useSelector(getLoginUsername)
+  const password = useSelector(getLoginPassword)
+  const isLoading = useSelector(getLoginIsLoading)
+  const error = useSelector(getLoginError)
 
   const onUsernameChange = useCallback((value: string) => {
     dispatch(loginActions.setUsername(value))
@@ -34,7 +45,8 @@ export const LoginForm = memo(({ className }: LoginFormProps) => {
   }, [dispatch, username, password])
 
   return (
-    <div className={classNames(classes.LoginForm, {}, [className])}>
+    <DynamicModuleLoader reducers={initialReducers}>
+      <div className={classNames(classes.LoginForm, {}, [className])}>
       <Text title={t('Authentication')} />
       <Input
         type='text'
@@ -58,5 +70,8 @@ export const LoginForm = memo(({ className }: LoginFormProps) => {
       </Button>
        {error && <Text theme={TextTheme.ERROR} text={error} ></Text>}
     </div>
+    </DynamicModuleLoader>
   )
 })
+
+export default LoginForm

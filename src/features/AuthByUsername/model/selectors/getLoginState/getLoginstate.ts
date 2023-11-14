@@ -1,3 +1,0 @@
-import { type StateSchema } from 'app/provider/StoreProvider'
-
-export const getLoginState = (state: StateSchema) => state?.login

@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom'
 import React, { Suspense } from 'react'
 import { I18nextProvider } from 'react-i18next'
 import i18n from 'shared/config/i18n/i18nForTests'
-import { Theme, ThemeProvider } from 'app/provider/ThemeProvider'
 import { StoreProvider } from 'app/provider/StoreProvider'
 
 const withI18next = (Story: StoryFn) => {

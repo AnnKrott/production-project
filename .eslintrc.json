@@ -39,7 +39,8 @@
                 "ignoreAttribute": [
                     "data-testid",
                     "to",
-                    "placeholder"
+                    "placeholder",
+                    "keyName"
                 ]
             }
         ]
