@@ -20,10 +20,10 @@ export const LoginModal = (props: LoginModalProps) => {
 
   return (
         <Modal
-        className={classNames(classes.LoginModal, {}, [className])}
-        isOpen={isOpen}
-        onClose={onClose}
-        lazy
+          className={classNames(classes.LoginModal, {}, [className])}
+          isOpen={isOpen}
+          onClose={onClose}
+          lazy
         >
 
         <Suspense fallback={<Loader/>}>
