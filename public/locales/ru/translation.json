@@ -5,7 +5,7 @@
   "Try again": "Попробуйте еще раз",
   "Throw error": "Выбросить ошибку",
   "Main Page": "Главная страница",
-  "About page": "О сайте",
+  "About Page": "О сайте",
   "Page not found": "Страница не найдена",
   "Login": "Войти",
   "Increment": "Инкремент",
@@ -14,5 +14,6 @@
   "Authentication": "Форма авторизации",
   "Incorrect login or password": "Неверный логин или пароль",
   "Username": "Логин",
-  "Sign out": "Выйти"
+  "Sign out": "Выйти",
+  "Profile Page": "Страница профиля"
 }

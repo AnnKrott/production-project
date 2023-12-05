@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": { 
+    "first": "Ann",
+    "lastname": "Krot",
+    "age": 27,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://www.google.ru/url?sa=i&url=https%3A%2F%2Fwww.theparisreview.org%2Fblog%2F2020%2F10%2F19%2Fwilliam-gaddiss-disorderly-inferno%2F&psig=AOvVaw0cM5WeAyDWO4SFoRbQGsTe&ust=1701802024433000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjMrdu49oIDFQAAAAAdAAAAABAE"
+   }
 }

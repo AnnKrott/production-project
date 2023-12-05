@@ -5,7 +5,7 @@
   "Try again": "Try again",
   "Throw error": "Throw Error",
   "Main Page": "Main Page",
-  "About page": "About Page",
+  "About Page": "About Page",
   "Page not found": "Page not found",
   "Login": "Login",
   "lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-laborum-omnis-voluptas-in-a-libero-eligendi-vel-cumque-quidem-similique-pariatur-nihil-illum-quod-atque-ipsam-hic-magnam-corporis-doloremque-sint": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, omnis voluptas? In, a libero eligendi vel cumque, quidem similique pariatur nihil illum quod atque ipsam hic magnam corporis doloremque sint.",
@@ -16,5 +16,6 @@
   "Authentication": "Authentication",
   "Incorrect login or password": "Incorrect Login or Password",
   "Username": "Username",
-  "Sign out": "Sign out"
+  "Sign out": "Sign out",
+  "Profile Page": "Profile Page"
 }

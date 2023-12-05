@@ -1,13 +1,14 @@
+import { memo } from 'react'
 import { useTranslation } from 'react-i18next'
 
-const AboutPage = () => {
+const AboutPage = memo(() => {
   const { t } = useTranslation()
 
   return (
         <div>
-            {t('About page')}
+            {t('About Page')}
         </div>
   )
-}
+})
 
 export default AboutPage

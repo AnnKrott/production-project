@@ -1,4 +1,5 @@
 {
+  "About Page": "About Page",
   "About page": "",
   "About us": "About us",
   "Authentication": "Authentication",
@@ -11,6 +12,8 @@
   "Page not found": "Page not found",
   "Page-not-found": "",
   "Password": "Password",
+  "Profile Page": "Profile Page",
+  "Profile page": "Profile page",
   "Sign out": "Sign out",
   "Something went wrong": "",
   "Throw error": "Throw error",

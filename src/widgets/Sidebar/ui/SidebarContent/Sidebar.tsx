@@ -1,25 +1,19 @@
 import classes from './Sidebar.module.scss'
 
-import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { memo, useState } from 'react'
 import { classNames } from 'shared/lib/classNames/classNames'
-import { RoutePath } from 'shared/config/routeConfig/routeConfig'
 
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher'
 import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher'
 import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button'
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
-
-import MainIcon from 'shared/assets/icons/sidebar-main.svg'
-import AboutIcon from 'shared/assets/icons/sidebar-about.svg'
+import { SidebarItemList } from 'widgets/Sidebar/model/items'
+import { SidebarItem } from '../SidebarItem/SidebarItem'
 
 interface SidebarProps {
   className?: string
 }
 
-export const Sidebar = ({ className }: SidebarProps) => {
-  const { t } = useTranslation()
-
+export const Sidebar = memo(({ className }: SidebarProps) => {
   const [collapsed, setCollapsed] = useState(false)
 
   const toggleSidebarWidth = () => {
@@ -44,27 +38,10 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
           <div className={classes.items}>
 
-              <AppLink
-                to={RoutePath.main}
-                theme={AppLinkTheme.INVERTED}
-                className={classes.item}
-              >
-                <MainIcon className={classes.icon} />
-                <span className={classes.link}>
-                  {t('Main Page')}
-                </span>
-              </AppLink>
+            {SidebarItemList.map((item) => (
+              <SidebarItem item={item} collapsed={collapsed} key={item.path}/>
+            ))}
 
-              <AppLink
-                to={RoutePath.about}
-                theme={AppLinkTheme.INVERTED}
-                className={classes.item}
-              >
-                <AboutIcon className={classes.icon}/>
-                <span className={classes.link}>
-                  {t('About page')}
-                </span>
-              </AppLink>
           </div>
 
           <div className={classes.switchers}>
@@ -73,4 +50,4 @@ export const Sidebar = ({ className }: SidebarProps) => {
           </div>
         </div>
   )
-}
+})
